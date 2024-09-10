@@ -2,6 +2,7 @@ package com.SpringBoot.model;
 
 public class Student {
 
+	
 	private Long id;
 	private String fullName;
 	private String emailId;
@@ -31,6 +32,9 @@ public class Student {
 	public void setEmailId(String emailId) {
 		this.emailId = emailId;
 	}
-	
+	@Override
+	public String toString() {
+		return "Student [id=" + id + ", fullName=" + fullName + ", emailId=" + emailId + "]";
+	}
 	
 }
